@@ -6,28 +6,23 @@
 }
 .main {
   width: 100%;
-  height: 185vh;
+  height: 100vh;
   background-color: #333;
   padding: 0 11%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: "poppins";
-  flex-direction: column;
 }
 .img img {
-  width: 250px;
+  width: 350px;
   padding: 0 10%;
-  border-radius: 300px;
-  border: 5px;
 }
-
 .text h1 {
   font-size: 50px;
   color: white;
   position: relative;
-  top: 10px;
-  left: 10px;
+  top: 80px;
 }
 .text h1::after {
   position: absolute;
@@ -39,13 +34,13 @@
   bottom: 2px;
 }
 .text p {
-  font-size: 16px;
+  font-size: 17px;
   color: white;
   line-height: 28px;
   margin: 30px 0 45px 0;
   max-width: 480;
   position: relative;
-  top: 10px;
+  top: 70px;
 }
 hr {
   border: 0;
@@ -54,6 +49,8 @@ hr {
   border-color: tomato;
   border-width: 1px 0 0 0;
   border-radius: 20px;
+  position: relative;
+  top: 45px;
 }
 hr:before {
   display: block;
@@ -64,4 +61,67 @@ hr:before {
   border-color: tomato;
   border-width: 0 0 1px 0;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    height: 185vh;
+  }
+  .img img {
+    width: 250px;
+    padding: 0 10%;
+    border-radius: 300px;
+  }
+  .text h1 {
+    font-size: 45px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+  }
+  .text p {
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    height: 180vh;
+  }
+  .img img {
+    width: 360px;
+    padding: 0 10%;
+    border-radius: 300px;
+  }
+  .text h1 {
+    font-size: 60px;
+    position: relative;
+    left: 30px;
+  }
+  .text p {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+    height: 165vh;
+  }
+  .img img {
+    width: 400px;
+    padding: 0 10%;
+    border-radius: 300px;
+  }
+  .text h1 {
+    font-size: 65px;
+    position: relative;
+    left: 20px;
+  }
+  .text p {
+    font-size: 34px;
+    line-height: 40px;
+  }
 }
