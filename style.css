@@ -84,6 +84,10 @@ hr:before {
     position: relative;
     top: 20px;
   }
+  hr {
+    position: relative;
+    top: 20px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .main {
@@ -99,10 +103,17 @@ hr:before {
     font-size: 60px;
     position: relative;
     left: 30px;
+    top: 20px;
   }
   .text p {
     font-size: 32px;
     line-height: 38px;
+    position: relative;
+    top: 20px;
+  }
+  hr {
+    position: relative;
+    top: 10px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -119,9 +130,16 @@ hr:before {
     font-size: 65px;
     position: relative;
     left: 20px;
+    top: 30px;
   }
   .text p {
     font-size: 34px;
     line-height: 40px;
+    position: relative;
+    top: 30px;
+  }
+  hr{
+    position: relative;
+    top: 10px;
   }
 }
